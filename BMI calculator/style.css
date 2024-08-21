@@ -1,0 +1,111 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: dynamicBackground 15s infinite ease-in-out; 
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes dynamicBackground {
+  0% {
+    background-image: url('https://images.unsplash.com/photo-1607962837359-5e7e89f86776?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
+  33% {
+    background-image: url('https://images.unsplash.com/photo-1518458717367-249ba15389d2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
+  66% {
+    background-image: url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
+  100% {
+    background-image: url('https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
+}
+
+.container {
+  height: 70vh;
+  width: 26vw;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  padding-left: 30px;
+}
+
+.result-box {
+  margin-top: 12px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  background-color: aliceblue;
+  display: flex;
+}
+
+#results {
+  padding: 5px 12px;
+  font-size: 22px;
+  color: rgb(0, 3, 3);
+}
+
+#height,
+#weight {
+  width: 150px;
+  height: 25px;
+  margin-top: 30px;
+}
+
+#weight-guide {
+  margin-left: 75px;
+  margin-top: 25px;
+}
+
+button {
+  width: 170px;
+  height: 35px;
+  margin-left: 90px;
+  margin-top: 25px;
+  background-color: #fff;
+  padding: 1px 30px;
+  border-radius: 8px;
+  color: #212121;
+  text-decoration: none;
+  border: 2px solid #212121;
+  font-size: 25px;
+}
+
+input {
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 1px solid black;
+}
+
+label {
+  font-weight: 800;
+  color: black;
+  font-size: 18px;
+}
+
+h1 {
+  border-radius: 12px;
+  font-size: 2.3rem;
+  color: rgb(5, 5, 6);
+  padding-left: 15px;
+  padding-top: 25px;
+}
+
+p {
+  padding: .2rem;
+  font-size: 16px;
+  color: rgb(249, 249, 249);
+}
+
